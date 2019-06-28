@@ -1,0 +1,1025 @@
+{
+	"id": "0ebcfca0-e90e-4b23-8c7d-65e52eb66880",
+	"name": "Windows Autopilot",
+	"description": "",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"fcb85f2f-e7da-4179-af84-8462ebb2572a",
+		"80711df4-1d79-4291-a39d-43501d22f0a8",
+		"66e8626e-0b2c-4934-9d1a-db3bb0225570",
+		"0cf621fe-7bf0-4780-817a-52e3ed07e40d",
+		"4760d1a0-bf78-410f-9449-a39d307dd6dd",
+		"fe817ac0-8209-49cc-b1f5-32aff7988f41",
+		"f526af15-d4ba-462a-8af0-ed4ae6355a4e"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "0cf621fe-7bf0-4780-817a-52e3ed07e40d",
+			"name": "Delete ImportedWindowsAutopilotDeviceIdentities",
+			"url": "https://graph.microsoft.com/beta/deviceManagement/importedWindowsAutopilotDeviceIdentities/:importedWindowsAutopilotDeviceIdentityId",
+			"description": "",
+			"data": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "DELETE",
+			"pathVariableData": [
+				{
+					"key": "importedWindowsAutopilotDeviceIdentityId",
+					"value": ""
+				}
+			],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{UserAccessToken}}"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"responses": [
+				{
+					"id": "4c91480b-58b0-41af-a3a1-b9d0898ef30e",
+					"name": "Delete ImportedWindowsAutopilotDeviceIdentities",
+					"status": null,
+					"mime": null,
+					"language": "plain",
+					"text": null,
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"requestObject": {
+						"data": null,
+						"dataMode": null,
+						"headerData": null,
+						"method": "DELETE",
+						"pathVariableData": [
+							{
+								"key": "importedWindowsAutopilotDeviceIdentityId",
+								"value": "6e633acb-20bb-4aa6-9191-17e67880dc8d"
+							}
+						],
+						"queryParams": [],
+						"url": "https://graph.microsoft.com/beta/deviceManagement/importedWindowsAutopilotDeviceIdentities/:importedWindowsAutopilotDeviceIdentityId"
+					},
+					"headers": [
+						{
+							"key": "Cache-Control",
+							"value": "private"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "request-id",
+							"value": "35ce13e6-6af1-43ac-aa94-652b9a74432a"
+						},
+						{
+							"key": "client-request-id",
+							"value": "35ce13e6-6af1-43ac-aa94-652b9a74432a"
+						},
+						{
+							"key": "x-ms-ags-diagnostic",
+							"value": "{\"ServerInfo\":{\"DataCenter\":\"West Europe\",\"Slice\":\"SliceC\",\"Ring\":\"4\",\"ScaleUnit\":\"000\",\"RoleInstance\":\"AGSFE_IN_21\",\"ADSiteName\":\"WEU\"}}"
+						},
+						{
+							"key": "Duration",
+							"value": "248.414"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 25 Jun 2019 18:52:45 GMT"
+						}
+					],
+					"cookies": null,
+					"request": "0cf621fe-7bf0-4780-817a-52e3ed07e40d",
+					"collection": "0ebcfca0-e90e-4b23-8c7d-65e52eb66880"
+				}
+			],
+			"pathVariables": {
+				"importedWindowsAutopilotDeviceIdentityId": ""
+			}
+		},
+		{
+			"id": "4760d1a0-bf78-410f-9449-a39d307dd6dd",
+			"name": "Sync WindowsAutopilotSettings",
+			"url": "https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotSettings/sync",
+			"description": "",
+			"data": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{UserAccessToken}}"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"responses": [
+				{
+					"id": "e937dc97-edd5-4ae5-9136-00ccc9e68bc3",
+					"name": "Sync WindowsAutopilotSettings",
+					"status": null,
+					"mime": null,
+					"language": "plain",
+					"text": null,
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"requestObject": {
+						"data": null,
+						"dataMode": null,
+						"headerData": null,
+						"method": "POST",
+						"pathVariableData": [],
+						"queryParams": [],
+						"url": "https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotSettings/sync"
+					},
+					"headers": [
+						{
+							"key": "Cache-Control",
+							"value": "private"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "request-id",
+							"value": "987325f7-eeec-458b-ae10-a3a692cc148d"
+						},
+						{
+							"key": "client-request-id",
+							"value": "987325f7-eeec-458b-ae10-a3a692cc148d"
+						},
+						{
+							"key": "x-ms-ags-diagnostic",
+							"value": "{\"ServerInfo\":{\"DataCenter\":\"West Europe\",\"Slice\":\"SliceC\",\"Ring\":\"4\",\"ScaleUnit\":\"000\",\"RoleInstance\":\"AGSFE_IN_21\",\"ADSiteName\":\"WEU\"}}"
+						},
+						{
+							"key": "Duration",
+							"value": "188.8702"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 25 Jun 2019 18:54:14 GMT"
+						}
+					],
+					"cookies": null,
+					"request": "4760d1a0-bf78-410f-9449-a39d307dd6dd",
+					"collection": "0ebcfca0-e90e-4b23-8c7d-65e52eb66880"
+				}
+			],
+			"pathVariables": {}
+		},
+		{
+			"id": "66e8626e-0b2c-4934-9d1a-db3bb0225570",
+			"name": "List ImportedWindowsAutopilotDeviceIdentities",
+			"url": "https://graph.microsoft.com/beta/deviceManagement/importedWindowsAutopilotDeviceIdentities",
+			"description": "",
+			"data": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{UserAccessToken}}"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"responses": [
+				{
+					"id": "0a5e3788-40bf-4d50-aefd-278d5dda6939",
+					"name": "List ImportedWindowsAutopilotDeviceIdentities",
+					"status": null,
+					"mime": null,
+					"language": "json",
+					"text": "{\n    \"@odata.context\": \"https://graph.microsoft.com/beta/$metadata#deviceManagement/importedWindowsAutopilotDeviceIdentities\",\n    \"value\": [\n        {\n            \"id\": \"27e12794-28ea-4b0c-ab25-6b1fdac29525\",\n            \"orderIdentifier\": \"SMSBOOT\",\n            \"serialNumber\": \"1635-4679-1935-2835-4350-8788-71\",\n            \"productKey\": \"27e12794-28ea-4b0c-ab25-6b1fdac29525\",\n            \"importId\": \"067172f9-0b80-406c-b191-aa51436354cd\",\n            \"hardwareIdentifier\": null,\n            \"assignedUserPrincipalName\": null,\n            \"state\": {\n                \"deviceImportStatus\": \"complete\",\n                \"deviceRegistrationId\": \"53f305c6-2724-40ae-8cb5-8a5ae4375408\",\n                \"deviceErrorCode\": 0,\n                \"deviceErrorName\": \"None\"\n            }\n        }\n    ]\n}",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"requestObject": {
+						"data": null,
+						"dataMode": null,
+						"headerData": null,
+						"method": "GET",
+						"pathVariableData": [],
+						"queryParams": [],
+						"url": "https://graph.microsoft.com/beta/deviceManagement/importedWindowsAutopilotDeviceIdentities"
+					},
+					"headers": [
+						{
+							"key": "Cache-Control",
+							"value": "private"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false;charset=utf-8"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "request-id",
+							"value": "0874e96f-938b-43d3-addb-a57e43c282b5"
+						},
+						{
+							"key": "client-request-id",
+							"value": "0874e96f-938b-43d3-addb-a57e43c282b5"
+						},
+						{
+							"key": "x-ms-ags-diagnostic",
+							"value": "{\"ServerInfo\":{\"DataCenter\":\"West Europe\",\"Slice\":\"SliceC\",\"Ring\":\"4\",\"ScaleUnit\":\"000\",\"RoleInstance\":\"AGSFE_IN_21\",\"ADSiteName\":\"WEU\"}}"
+						},
+						{
+							"key": "OData-Version",
+							"value": "4.0"
+						},
+						{
+							"key": "Duration",
+							"value": "231.7127"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 25 Jun 2019 18:49:41 GMT"
+						}
+					],
+					"cookies": null,
+					"request": "66e8626e-0b2c-4934-9d1a-db3bb0225570",
+					"collection": "0ebcfca0-e90e-4b23-8c7d-65e52eb66880"
+				}
+			],
+			"pathVariables": {}
+		},
+		{
+			"id": "80711df4-1d79-4291-a39d-43501d22f0a8",
+			"name": "Get ImportedWindowsAutopilotDeviceIdentities",
+			"url": "https://graph.microsoft.com/beta/deviceManagement/importedWindowsAutopilotDeviceIdentities/:importedWindowsAutopilotDeviceIdentityId",
+			"description": "",
+			"data": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [
+				{
+					"key": "importedWindowsAutopilotDeviceIdentityId",
+					"value": ""
+				}
+			],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{UserAccessToken}}"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"responses": [
+				{
+					"id": "2b274bbe-6c72-4a9b-aa35-0eb11791c5b1",
+					"name": "Get ImportedWindowsAutopilotDeviceIdentities",
+					"status": null,
+					"mime": null,
+					"language": "json",
+					"text": "{\n    \"@odata.context\": \"https://graph.microsoft.com/beta/$metadata#deviceManagement/importedWindowsAutopilotDeviceIdentities/$entity\",\n    \"id\": \"330eb2d1-af78-4ac3-ada8-afe1a605ddb1\",\n    \"orderIdentifier\": \"Customer1\",\n    \"serialNumber\": \"1635-4679-1935-2835-4350-8788-71\",\n    \"productKey\": \"1635-4679-1935-2835-4350-8788-71\",\n    \"importId\": \"330eb2d1-af78-4ac3-ada8-afe1a605ddb1\",\n    \"hardwareIdentifier\": null,\n    \"assignedUserPrincipalName\": null,\n    \"state\": {\n        \"deviceImportStatus\": \"complete\",\n        \"deviceRegistrationId\": \"beb959f9-694a-4bc2-bed7-be212499918e\",\n        \"deviceErrorCode\": 0,\n        \"deviceErrorName\": \"None\"\n    }\n}",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"requestObject": {
+						"data": null,
+						"dataMode": null,
+						"headerData": null,
+						"method": "GET",
+						"pathVariableData": [
+							{
+								"key": "importedWindowsAutopilotDeviceIdentityId",
+								"value": "330eb2d1-af78-4ac3-ada8-afe1a605ddb1"
+							}
+						],
+						"queryParams": [],
+						"url": "https://graph.microsoft.com/beta/deviceManagement/importedWindowsAutopilotDeviceIdentities/:importedWindowsAutopilotDeviceIdentityId"
+					},
+					"headers": [
+						{
+							"key": "Cache-Control",
+							"value": "private"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false;charset=utf-8"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "request-id",
+							"value": "9248be08-bcb8-43f5-a87d-652c4bfdb0d9"
+						},
+						{
+							"key": "client-request-id",
+							"value": "9248be08-bcb8-43f5-a87d-652c4bfdb0d9"
+						},
+						{
+							"key": "x-ms-ags-diagnostic",
+							"value": "{\"ServerInfo\":{\"DataCenter\":\"West Europe\",\"Slice\":\"SliceC\",\"Ring\":\"4\",\"ScaleUnit\":\"000\",\"RoleInstance\":\"AGSFE_IN_44\",\"ADSiteName\":\"WEU\"}}"
+						},
+						{
+							"key": "OData-Version",
+							"value": "4.0"
+						},
+						{
+							"key": "Duration",
+							"value": "246.1664"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 27 Jun 2019 21:19:34 GMT"
+						}
+					],
+					"cookies": null,
+					"request": "80711df4-1d79-4291-a39d-43501d22f0a8",
+					"collection": "0ebcfca0-e90e-4b23-8c7d-65e52eb66880"
+				},
+				{
+					"id": "342ab392-88db-42b0-bb2f-473098ed5bb7",
+					"name": "Get ImportedWindowsAutopilotDeviceIdentities",
+					"status": null,
+					"mime": null,
+					"language": "json",
+					"text": "{\n    \"@odata.context\": \"https://graph.microsoft.com/beta/$metadata#deviceManagement/importedWindowsAutopilotDeviceIdentities/$entity\",\n    \"id\": \"f58e8e7f-565c-4d36-b5d8-9656ba122894\",\n    \"orderIdentifier\": \"Customer1\",\n    \"serialNumber\": \"1635-4679-1935-2835-4350-8788-71\",\n    \"productKey\": \"f58e8e7f-565c-4d36-b5d8-9656ba122894\",\n    \"importId\": \"c0723075-bbc1-4c83-b337-3a477a49fb1a\",\n    \"hardwareIdentifier\": null,\n    \"assignedUserPrincipalName\": null,\n    \"state\": {\n        \"deviceImportStatus\": \"error\",\n        \"deviceRegistrationId\": \"\",\n        \"deviceErrorCode\": 806,\n        \"deviceErrorName\": \"ZtdDeviceAlreadyAssigned\"\n    }\n}",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"requestObject": {
+						"data": null,
+						"dataMode": null,
+						"headerData": null,
+						"method": "GET",
+						"pathVariableData": [
+							{
+								"key": "importedWindowsAutopilotDeviceIdentityId",
+								"value": "f58e8e7f-565c-4d36-b5d8-9656ba122894"
+							}
+						],
+						"queryParams": [],
+						"url": "https://graph.microsoft.com/beta/deviceManagement/importedWindowsAutopilotDeviceIdentities/:importedWindowsAutopilotDeviceIdentityId"
+					},
+					"headers": [
+						{
+							"key": "Cache-Control",
+							"value": "private"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false;charset=utf-8"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "request-id",
+							"value": "c8c71995-0e6b-45b4-9c5e-c7c477aad053"
+						},
+						{
+							"key": "client-request-id",
+							"value": "c8c71995-0e6b-45b4-9c5e-c7c477aad053"
+						},
+						{
+							"key": "x-ms-ags-diagnostic",
+							"value": "{\"ServerInfo\":{\"DataCenter\":\"West Europe\",\"Slice\":\"SliceC\",\"Ring\":\"4\",\"ScaleUnit\":\"000\",\"RoleInstance\":\"AGSFE_IN_21\",\"ADSiteName\":\"WEU\"}}"
+						},
+						{
+							"key": "OData-Version",
+							"value": "4.0"
+						},
+						{
+							"key": "Duration",
+							"value": "231.42"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 25 Jun 2019 18:48:53 GMT"
+						}
+					],
+					"cookies": null,
+					"request": "80711df4-1d79-4291-a39d-43501d22f0a8",
+					"collection": "0ebcfca0-e90e-4b23-8c7d-65e52eb66880"
+				}
+			],
+			"pathVariables": {
+				"importedWindowsAutopilotDeviceIdentityId": ""
+			}
+		},
+		{
+			"id": "f526af15-d4ba-462a-8af0-ed4ae6355a4e",
+			"name": "Get WindowsAutopilotDevice",
+			"url": "https://graph.microsoft.com/beta/deviceManagement/WindowsAutopilotDeviceIdentities/:deviceRegistrationId?$expand=deploymentProfile,intendedDeploymentProfile",
+			"description": "",
+			"data": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [
+				{
+					"key": "deviceRegistrationId",
+					"value": ""
+				}
+			],
+			"queryParams": [
+				{
+					"key": "$expand",
+					"value": "deploymentProfile,intendedDeploymentProfile",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{UserAccessToken}}"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"responses": [
+				{
+					"id": "4cdee400-74d4-4633-8c6c-a40901633e26",
+					"name": "Get WindowsAutopilotDevice Assigned Profiles",
+					"status": null,
+					"mime": null,
+					"language": "json",
+					"text": "{\n    \"@odata.context\": \"https://graph.microsoft.com/beta/$metadata#deviceManagement/windowsAutopilotDeviceIdentities/$entity\",\n    \"id\": \"9607da77-f74c-4d55-a3fe-86ab598f3111\",\n    \"deploymentProfileAssignmentStatus\": \"assignedInSync\",\n    \"deploymentProfileAssignmentDetailedStatus\": \"none\",\n    \"deploymentProfileAssignedDateTime\": \"2019-06-10T07:22:30.6595639Z\",\n    \"orderIdentifier\": null,\n    \"groupTag\": null,\n    \"purchaseOrderIdentifier\": null,\n    \"serialNumber\": \"3046-9505-0227-6386-5879-2836-37\",\n    \"productKey\": null,\n    \"manufacturer\": \"Microsoft Corporation\",\n    \"model\": \"Virtual Machine\",\n    \"enrollmentState\": \"enrolled\",\n    \"lastContactedDateTime\": \"2019-06-20T16:02:35.6882357Z\",\n    \"addressableUserName\": null,\n    \"userPrincipalName\": null,\n    \"resourceName\": null,\n    \"skuNumber\": \"None\",\n    \"systemFamily\": \"Virtual Machine\",\n    \"azureActiveDirectoryDeviceId\": \"f4aa1d98-97e4-4782-9579-ed17645f9de4\",\n    \"managedDeviceId\": \"af46c1bf-b2c6-488e-a268-1457ce6b1cb7\",\n    \"deploymentProfile\": {\n        \"@odata.type\": \"#microsoft.graph.azureADWindowsAutopilotDeploymentProfile\",\n        \"id\": \"1a3b3812-772c-4113-92ae-0ea5ed51400f\",\n        \"displayName\": \"Kiosk VM\",\n        \"description\": \"\",\n        \"language\": \"\",\n        \"createdDateTime\": \"2019-04-19T14:06:12.1043974Z\",\n        \"lastModifiedDateTime\": \"2019-06-18T21:01:54.0374479Z\",\n        \"enrollmentStatusScreenSettings\": null,\n        \"extractHardwareHash\": false,\n        \"deviceNameTemplate\": \"Kiosk-%SERIAL%\",\n        \"deviceType\": \"windowsPc\",\n        \"enableWhiteGlove\": false,\n        \"roleScopeTagIds\": [],\n        \"outOfBoxExperienceSettings\": {\n            \"hidePrivacySettings\": true,\n            \"hideEULA\": true,\n            \"userType\": \"administrator\",\n            \"deviceUsageType\": \"singleUser\",\n            \"skipKeyboardSelectionPage\": false,\n            \"hideEscapeLink\": false\n        }\n    },\n    \"intendedDeploymentProfile\": {\n        \"@odata.type\": \"#microsoft.graph.azureADWindowsAutopilotDeploymentProfile\",\n        \"id\": \"1a3b3812-772c-4113-92ae-0ea5ed51400f\",\n        \"displayName\": \"Kiosk VM\",\n        \"description\": \"\",\n        \"language\": \"\",\n        \"createdDateTime\": \"2019-04-19T14:06:12.1043974Z\",\n        \"lastModifiedDateTime\": \"2019-06-18T21:01:54.0374479Z\",\n        \"enrollmentStatusScreenSettings\": null,\n        \"extractHardwareHash\": false,\n        \"deviceNameTemplate\": \"Kiosk-%SERIAL%\",\n        \"deviceType\": \"windowsPc\",\n        \"enableWhiteGlove\": false,\n        \"roleScopeTagIds\": [],\n        \"outOfBoxExperienceSettings\": {\n            \"hidePrivacySettings\": true,\n            \"hideEULA\": true,\n            \"userType\": \"administrator\",\n            \"deviceUsageType\": \"singleUser\",\n            \"skipKeyboardSelectionPage\": false,\n            \"hideEscapeLink\": false\n        }\n    }\n}",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"requestObject": {
+						"data": null,
+						"dataMode": null,
+						"headerData": null,
+						"method": "GET",
+						"pathVariableData": [
+							{
+								"key": "windowsAutopilotDeviceIdentityId",
+								"value": "9607da77-f74c-4d55-a3fe-86ab598f3111"
+							}
+						],
+						"queryParams": [
+							{
+								"key": "$expand",
+								"value": "deploymentProfile,intendedDeploymentProfile",
+								"equals": true,
+								"description": "",
+								"enabled": true
+							}
+						],
+						"url": "https://graph.microsoft.com/beta/deviceManagement/WindowsAutopilotDeviceIdentities/:windowsAutopilotDeviceIdentityId?$expand=deploymentProfile,intendedDeploymentProfile"
+					},
+					"headers": [
+						{
+							"key": "Cache-Control",
+							"value": "private"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false;charset=utf-8"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "request-id",
+							"value": "4feed455-d732-4f7f-bd14-5b34f8104555"
+						},
+						{
+							"key": "client-request-id",
+							"value": "4feed455-d732-4f7f-bd14-5b34f8104555"
+						},
+						{
+							"key": "x-ms-ags-diagnostic",
+							"value": "{\"ServerInfo\":{\"DataCenter\":\"West Europe\",\"Slice\":\"SliceC\",\"Ring\":\"5\",\"ScaleUnit\":\"001\",\"RoleInstance\":\"AGSFE_IN_22\",\"ADSiteName\":\"WEU\"}}"
+						},
+						{
+							"key": "OData-Version",
+							"value": "4.0"
+						},
+						{
+							"key": "Duration",
+							"value": "262.8985"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 25 Jun 2019 19:40:08 GMT"
+						}
+					],
+					"cookies": null,
+					"request": "f526af15-d4ba-462a-8af0-ed4ae6355a4e",
+					"collection": "0ebcfca0-e90e-4b23-8c7d-65e52eb66880"
+				}
+			],
+			"pathVariables": {
+				"deviceRegistrationId": ""
+			}
+		},
+		{
+			"id": "fcb85f2f-e7da-4179-af84-8462ebb2572a",
+			"name": "Create importedWindowsAutopilotDeviceIdentities",
+			"url": "https://graph.microsoft.com/beta/deviceManagement/importedWindowsAutopilotDeviceIdentities",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{UserAccessToken}}"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"responses": [
+				{
+					"id": "4f345cf2-936c-4a4d-8470-67d334af4ead",
+					"name": "Create importedWindowsAutopilotDeviceIdentities",
+					"status": null,
+					"mime": null,
+					"language": "json",
+					"text": "{\n    \"@odata.context\": \"https://graph.microsoft.com/beta/$metadata#deviceManagement/importedWindowsAutopilotDeviceIdentities/$entity\",\n    \"id\": \"330eb2d1-af78-4ac3-ada8-afe1a605ddb1\",\n    \"orderIdentifier\": \"Customer1\",\n    \"serialNumber\": \"1635-4679-1935-2835-4350-8788-71\",\n    \"productKey\": \"1635-4679-1935-2835-4350-8788-71\",\n    \"importId\": \"330eb2d1-af78-4ac3-ada8-afe1a605ddb1\",\n    \"hardwareIdentifier\": \"\",\n    \"assignedUserPrincipalName\": \"user1@yourdomain.com\",\n    \"state\": {\n        \"deviceImportStatus\": \"unknown\",\n        \"deviceRegistrationId\": \"\",\n        \"deviceErrorCode\": 0,\n        \"deviceErrorName\": \"\"\n    }\n}",
+					"responseCode": {
+						"code": 201,
+						"name": "Created"
+					},
+					"requestObject": {
+						"data": [],
+						"dataMode": "raw",
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"type": "text"
+							}
+						],
+						"method": "POST",
+						"pathVariableData": [],
+						"queryParams": [],
+						"url": "https://graph.microsoft.com/beta/deviceManagement/importedWindowsAutopilotDeviceIdentities",
+						"rawModeData": "    {\r\n\t  \"@odata.type\": \"#microsoft.graph.importedWindowsAutopilotDeviceIdentity\",\r\n      \"orderIdentifier\": \"Customer1\",\r\n      \"serialNumber\": \"1635-4679-1935-2835-4350-8788-71\",\r\n      \"hardwareIdentifier\": \"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AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\",\r\n      \"assignedUserPrincipalName\": \"user1@yourdomain.com\"\r\n    }"
+					},
+					"headers": [
+						{
+							"key": "Cache-Control",
+							"value": "private"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false;charset=utf-8"
+						},
+						{
+							"key": "Location",
+							"value": "https://fef.msub03.manage.microsoft.com/DeviceEnrollmentFE/StatelessDeviceEnrollmentFEService/deviceManagement/importedWindowsAutopilotDeviceIdentities('330eb2d1-af78-4ac3-ada8-afe1a605ddb1')"
+						},
+						{
+							"key": "request-id",
+							"value": "53566630-e653-41e1-8e3a-ea13d37b9f35"
+						},
+						{
+							"key": "client-request-id",
+							"value": "53566630-e653-41e1-8e3a-ea13d37b9f35"
+						},
+						{
+							"key": "x-ms-ags-diagnostic",
+							"value": "{\"ServerInfo\":{\"DataCenter\":\"West Europe\",\"Slice\":\"SliceC\",\"Ring\":\"5\",\"ScaleUnit\":\"003\",\"RoleInstance\":\"AGSFE_IN_36\",\"ADSiteName\":\"WEU\"}}"
+						},
+						{
+							"key": "OData-Version",
+							"value": "4.0"
+						},
+						{
+							"key": "Duration",
+							"value": "253.658"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 27 Jun 2019 21:15:56 GMT"
+						}
+					],
+					"cookies": null,
+					"request": "fcb85f2f-e7da-4179-af84-8462ebb2572a",
+					"collection": "0ebcfca0-e90e-4b23-8c7d-65e52eb66880"
+				},
+				{
+					"id": "75c79c72-0da5-4759-8489-b92df670aee9",
+					"name": "Create importedWindowsAutopilotDeviceIdentities",
+					"status": null,
+					"mime": null,
+					"language": "json",
+					"text": "{\n    \"@odata.context\": \"https://graph.microsoft.com/beta/$metadata#deviceManagement/importedWindowsAutopilotDeviceIdentities/$entity\",\n    \"id\": \"16e3e6ef-167d-4b6a-9fe0-a83a728f4890\",\n    \"orderIdentifier\": \"Customer1\",\n    \"serialNumber\": \"1635-4679-1935-2835-4350-8788-71\",\n    \"productKey\": \"1635-4679-1935-2835-4350-8788-71\",\n    \"importId\": \"16e3e6ef-167d-4b6a-9fe0-a83a728f4890\",\n    \"hardwareIdentifier\": \"\",\n    \"assignedUserPrincipalName\": \"user1@yourdomain.com\",\n    \"state\": {\n        \"deviceImportStatus\": \"unknown\",\n        \"deviceRegistrationId\": \"\",\n        \"deviceErrorCode\": 0,\n        \"deviceErrorName\": \"\"\n    }\n}",
+					"responseCode": {
+						"code": 201,
+						"name": "Created"
+					},
+					"requestObject": {
+						"data": [],
+						"dataMode": "raw",
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"type": "text"
+							}
+						],
+						"method": "POST",
+						"pathVariableData": [],
+						"queryParams": [],
+						"url": "https://graph.microsoft.com/beta/deviceManagement/importedWindowsAutopilotDeviceIdentities",
+						"rawModeData": "    {\r\n\t  \"@odata.type\": \"#microsoft.graph.importedWindowsAutopilotDeviceIdentity\",\r\n      \"orderIdentifier\": \"Customer1\",\r\n      \"serialNumber\": \"1635-4679-1935-2835-4350-8788-71\",\r\n      \"hardwareIdentifier\": \"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AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\",\r\n      \"assignedUserPrincipalName\": \"user1@yourdomain.com\"\r\n    }"
+					},
+					"headers": [
+						{
+							"key": "Cache-Control",
+							"value": "private"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false;charset=utf-8"
+						},
+						{
+							"key": "Location",
+							"value": "https://fef.msub03.manage.microsoft.com/DeviceEnrollmentFE/StatelessDeviceEnrollmentFEService/deviceManagement/importedWindowsAutopilotDeviceIdentities('16e3e6ef-167d-4b6a-9fe0-a83a728f4890')"
+						},
+						{
+							"key": "request-id",
+							"value": "d1fd8eb8-c62f-4368-bb5d-85bef5ead31d"
+						},
+						{
+							"key": "client-request-id",
+							"value": "d1fd8eb8-c62f-4368-bb5d-85bef5ead31d"
+						},
+						{
+							"key": "x-ms-ags-diagnostic",
+							"value": "{\"ServerInfo\":{\"DataCenter\":\"West Europe\",\"Slice\":\"SliceC\",\"Ring\":\"5\",\"ScaleUnit\":\"002\",\"RoleInstance\":\"AGSFE_IN_25\",\"ADSiteName\":\"WEU\"}}"
+						},
+						{
+							"key": "OData-Version",
+							"value": "4.0"
+						},
+						{
+							"key": "Duration",
+							"value": "402.3181"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 27 Jun 2019 20:54:59 GMT"
+						}
+					],
+					"cookies": null,
+					"request": "fcb85f2f-e7da-4179-af84-8462ebb2572a",
+					"collection": "0ebcfca0-e90e-4b23-8c7d-65e52eb66880"
+				},
+				{
+					"id": "b409e7e7-1faa-47be-a692-0ed65c140570",
+					"name": "Create importedWindowsAutopilotDeviceIdentities",
+					"status": null,
+					"mime": null,
+					"language": "json",
+					"text": "{\n    \"@odata.context\": \"https://graph.microsoft.com/beta/$metadata#Collection(importedWindowsAutopilotDeviceIdentity)\",\n    \"value\": [\n        {\n            \"@odata.type\": \"#microsoft.graph.importedWindowsAutopilotDeviceIdentity\",\n            \"id\": \"f58e8e7f-565c-4d36-b5d8-9656ba122894\",\n            \"orderIdentifier\": \"Customer1\",\n            \"serialNumber\": \"1635-4679-1935-2835-4350-8788-71\",\n            \"productKey\": \"f58e8e7f-565c-4d36-b5d8-9656ba122894\",\n            \"importId\": \"c0723075-bbc1-4c83-b337-3a477a49fb1a\",\n            \"hardwareIdentifier\": \"\",\n            \"assignedUserPrincipalName\": \"user1@yourdomain.com\",\n            \"state\": {\n                \"deviceImportStatus\": \"unknown\",\n                \"deviceRegistrationId\": \"\",\n                \"deviceErrorCode\": 0,\n                \"deviceErrorName\": \"\"\n            }\n        }\n    ]\n}",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"requestObject": {
+						"data": [],
+						"dataMode": "raw",
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"type": "text"
+							}
+						],
+						"method": "POST",
+						"pathVariableData": [],
+						"queryParams": [],
+						"url": "https://graph.microsoft.com/beta/deviceManagement/importedWindowsAutopilotDeviceIdentities/import",
+						"rawModeData": "{\r\n  \"importedWindowsAutopilotDeviceIdentities\": [\r\n    {\r\n      \"@odata.type\": \"#microsoft.graph.importedWindowsAutopilotDeviceIdentity\",\r\n      \"orderIdentifier\": \"Customer1\",\r\n      \"serialNumber\": \"1635-4679-1935-2835-4350-8788-71\",\r\n      \"productKey\": \"\",\r\n      \"importId\": \"Import Id value\",\r\n      \"hardwareIdentifier\": \"T0F0BAEAHAAAAAoAAQC6RwAACgCRALpH00idJAwCCQQCABAACQABAAEAAgABAAAABQAZAAIAAAAAAAAAAAgAAAAAAAABAAEAAwMAEQBHZW51aW5lSW50ZWwABAA0AEludGVsKFIpIFhlb24oUikgRS0yMTc2TSAgQ1BVIEAgMi43MEdIegAAAAAAAAAAAAYAEAA1AAAAAAAAAAoA/wEHAB4AfFZpcnR1YWwgRGlzayAgICB8TXNmdCAgICAIAB4AAAAAAAAVXSX3FgwAAABWAE0AQgBVAFMAAAAJABAAAAAAAAAEAAP/////GwAIAAAAAAAKAAkAAwEBxQoNAFYAVFBNLVZlcnNpb246Mi4wIC1MZXZlbDowLVJldmlzaW9uOjEuMTYtVmVuZG9ySUQ6J01TRlQnLUZpcm13YXJlOjUzODI0NzQ0My4xMzk0NzIyABkABAGg1cAUZ3e9zeUZFjgns1WfsDxj6OQ4TGBQup9CXCnjRnR8BSdqDdDedluBSmVLOVYDj/J+1NWOmjVQF4dhOKdrzkykrAPnuTJUKcJ5M7914PWDkyEXAfBF8NwHuUOMO/imIkdKhYffyFcDmOwZfbb43PM72+rLxOAS6/24EzYkD/2A/R4Imhqpenr4LPgekn3f8Hgt3EeOKmlWxZci3BuESyBw2LT6aNj5TOy3fATbfm4xdMT4nJZhaXtfWGk+NCZX1+I1ZCGtdQruVpJb6O267aOKzq3DbeJB+jJHsWkG4E758Jx+G4n8zVL5+dLmRr8R7oBXA550EPCQMm9FGyMHCwAuAAAAAAABACAAAADM8M0+oxgwO0Ik6g5iMt1YHzFu4QwR4ZWaXSiAnoFK/AwAFADbL5Gin/jPS4Zed4JYjI06DgAlADE2MzUtNDY3OS0xOTM1LTI4MzUtNDM1MC04Nzg4LTcxAA8AGgBNaWNyb3NvZnQgQ29ycG9yYXRpb24AEAAaAE1pY3Jvc29mdCBDb3Jwb3JhdGlvbgARABQAVmlydHVhbCBNYWNoaW5lABIACQBOb25lABMAFABWaXJ0dWFsIE1hY2hpbmUAFwAeAEh5cGVyLVYgVUVGSSBSZWxlYXNlIHY0LjAAFAAaAE1pY3Jvc29mdCBDb3Jwb3JhdGlvbgAVABQAVmlydHVhbCBNYWNoaW5lABYAHgBIeXBlci1WIFVFRkkgUmVsZWFzZSB2NC4wABwAHwB8VmlydHVhbCBEaXNrICAgIHxNc2Z0ICAgIAAdABYAAAAAAAAAAAAAAAAAAAAAAAIAHQAWAAAAAAAAAAAAAAAAAAAAAAABAR4AWABNAGkAYwByAG8AcwBvAGYAdAB8AE0AaQBjAHIAbwBzAG8AZgB0ACAAUgBlAG0AbwB0AGUAIABEAGkAcwBwAGwAYQB5ACAAQQBkAGEAcAB0AGUAcgAeAEYATQBpAGMAcgBvAHMAbwBmAHQAfABNAGkAYwByAG8AcwBvAGYAdAAgAEgAeQBwAGUAcgAtAFYAIABWAGkAZABlAG8AQ1MkADKDY77IpbctnY9mcKDSISnYYYNtBmRmFItEvc134V7pAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\",\r\n      \"assignedUserPrincipalName\": \"user1@yourdomain.com\"\r\n    }\r\n  ]\r\n}"
+					},
+					"headers": [
+						{
+							"key": "Cache-Control",
+							"value": "private"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false;charset=utf-8"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Location",
+							"value": "https://graph.microsoft.com"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "request-id",
+							"value": "ac10fc05-17a2-4da5-affe-7411645b1447"
+						},
+						{
+							"key": "client-request-id",
+							"value": "ac10fc05-17a2-4da5-affe-7411645b1447"
+						},
+						{
+							"key": "x-ms-ags-diagnostic",
+							"value": "{\"ServerInfo\":{\"DataCenter\":\"West Europe\",\"Slice\":\"SliceC\",\"Ring\":\"5\",\"ScaleUnit\":\"003\",\"RoleInstance\":\"AGSFE_IN_49\",\"ADSiteName\":\"WEU\"}}"
+						},
+						{
+							"key": "OData-Version",
+							"value": "4.0"
+						},
+						{
+							"key": "Duration",
+							"value": "341.6222"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 25 Jun 2019 18:46:11 GMT"
+						}
+					],
+					"cookies": null,
+					"request": "fcb85f2f-e7da-4179-af84-8462ebb2572a",
+					"collection": "0ebcfca0-e90e-4b23-8c7d-65e52eb66880"
+				}
+			],
+			"rawModeData": "    {\r\n\t  \"@odata.type\": \"#microsoft.graph.importedWindowsAutopilotDeviceIdentity\",\r\n      \"orderIdentifier\": \"Customer1\",\r\n      \"serialNumber\": \"1635-4679-1935-2835-4350-8788-71\",\r\n      \"hardwareIdentifier\": \"T0F0BAEAHAAAAAoAAQC6RwAACgCRALpH00idJAwCCQQCABAACQABAAEAAgABAAAABQAZAAIAAAAAAA\",\r\n      \"assignedUserPrincipalName\": \"user1@yourdomain.com\"\r\n    }",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "fe817ac0-8209-49cc-b1f5-32aff7988f41",
+			"name": "List WindowsAutopilotDeviceIdentities",
+			"url": "https://graph.microsoft.com/beta/deviceManagement/WindowsAutopilotDeviceIdentities/",
+			"description": "",
+			"data": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{UserAccessToken}}"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"responses": [
+				{
+					"id": "9c682201-9cc6-4225-a4f0-d1e3c4e427f8",
+					"name": "List WindowsAutopilotDeviceIdentities",
+					"status": null,
+					"mime": null,
+					"language": "json",
+					"text": "{\n    \"@odata.context\": \"https://graph.microsoft.com/beta/$metadata#deviceManagement/windowsAutopilotDeviceIdentities\",\n    \"@odata.count\": 5,\n    \"value\": [\n        {\n            \"id\": \"883d2788-8f2c-4999-bece-77e2e8e5faa5\",\n            \"deploymentProfileAssignmentStatus\": \"notAssigned\",\n            \"deploymentProfileAssignmentDetailedStatus\": \"none\",\n            \"deploymentProfileAssignedDateTime\": \"0001-01-01T00:00:00Z\",\n            \"orderIdentifier\": \"Customer1\",\n            \"groupTag\": \"Customer1\",\n            \"purchaseOrderIdentifier\": \"\",\n            \"serialNumber\": \"1635-4679-1935-2835-4350-8788-71\",\n            \"productKey\": \"6b0ad8b4-30ef-4d86-acfa-82a0960f7f6e\",\n            \"manufacturer\": \"Microsoft Corporation\",\n            \"model\": \"Virtual Machine\",\n            \"enrollmentState\": \"notContacted\",\n            \"lastContactedDateTime\": \"0001-01-01T00:00:00Z\",\n            \"addressableUserName\": \"\",\n            \"userPrincipalName\": \"user1@yourdomain.com\",\n            \"resourceName\": \"\",\n            \"skuNumber\": \"None\",\n            \"systemFamily\": \"Virtual Machine\",\n            \"azureActiveDirectoryDeviceId\": \"ffa2d6a7-e885-4e45-9066-9f89b3b1aad1\",\n            \"managedDeviceId\": \"00000000-0000-0000-0000-000000000000\"\n        }\n    ]\n}",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"requestObject": {
+						"data": null,
+						"dataMode": null,
+						"headerData": null,
+						"method": "GET",
+						"pathVariableData": [],
+						"queryParams": [],
+						"url": "https://graph.microsoft.com/beta/deviceManagement/WindowsAutopilotDeviceIdentities/"
+					},
+					"headers": [
+						{
+							"key": "Cache-Control",
+							"value": "private"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false;charset=utf-8"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "request-id",
+							"value": "23ee436e-24cb-43c0-8b28-0f393fbb8fec"
+						},
+						{
+							"key": "client-request-id",
+							"value": "23ee436e-24cb-43c0-8b28-0f393fbb8fec"
+						},
+						{
+							"key": "x-ms-ags-diagnostic",
+							"value": "{\"ServerInfo\":{\"DataCenter\":\"West Europe\",\"Slice\":\"SliceC\",\"Ring\":\"5\",\"ScaleUnit\":\"001\",\"RoleInstance\":\"AGSFE_IN_31\",\"ADSiteName\":\"WEU\"}}"
+						},
+						{
+							"key": "OData-Version",
+							"value": "4.0"
+						},
+						{
+							"key": "Duration",
+							"value": "758.7282"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 27 Jun 2019 18:19:02 GMT"
+						}
+					],
+					"cookies": null,
+					"request": "fe817ac0-8209-49cc-b1f5-32aff7988f41",
+					"collection": "0ebcfca0-e90e-4b23-8c7d-65e52eb66880"
+				}
+			],
+			"pathVariables": {}
+		}
+	]
+}
