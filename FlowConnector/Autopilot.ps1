@@ -28,7 +28,7 @@ $body = @"
 "@
 
 #Change this to your Flow HTTP request url
-$Url = "https://prod-98.westeurope.logic.azure.com:443/workflows/38eebac34d2a46119f7fb3c165e73b5d/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=zQ71lxS4x8PzgO3eBObX4x_wgU_DCs8FNnucHJzwhTc"
+$Url = "https://prod-98.westeurope.logic.azure.com:443/workflows/38eebac34d2a46119f7fb3c165e73b5d/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%"
 
 try
 {
